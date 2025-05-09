@@ -16,7 +16,8 @@ def calculate_total_bitcoin_supply():
         rewards_in_cycle = halving_interval * reward
         total_bitcoin += rewards_in_cycle
         reward /= 2
-
+        
+    print(f"\nResult: The total of the reward sizes is {reward} BTC.")
     return total_bitcoin
 
 # The total BTC supply using this program will return 21,000,000 BTC.
@@ -25,3 +26,4 @@ def calculate_total_bitcoin_supply():
 if __name__ == "__main__":
     total_btc = calculate_total_bitcoin_supply()
     print(f"\nResult: The total Bitcoin supply will be approximately {total_btc} BTC.")
+    
