@@ -5,7 +5,21 @@ The purpose of this project is to calculate the actual total supply of Bitcoin, 
 That is actually not the exact number, and that requires some explanation.
 
 1. Bitcoin does not use decimals in division, it uses integer math.
-2. Bitcoin software protocol uses bitshift-operators.
+
+Integer Division in the Protocol
+
+The Bitcoin protocol specifies that the block reward starts at 50 BTC and is halved after every 210,000 blocks. This halving is implemented as an integer division within the core logic of Bitcoin.   
+When a halving occurs, the new reward is essentially the previous reward divided by 2. If the previous reward was an odd number of Satoshis (the smallest unit), this division would result in a fraction.
+However, the protocol dictates that the block reward must be a whole number of Satoshis. Therefore, any fractional part resulting from the division is truncated (discarded).
+
+2. Bitcoin software protocol uses bit-shift operators.
+
+Bit-shift (Bitwise Shift) operators (<< for left shift and >> for right shift) are highly efficient ways to perform multiplication and division by powers of 2 at the binary level. They are crucial for 
+optimizing various low-level operations within the Bitcoin software, such as integer arithmetic. Since satoshi (the smallest unit of Bitcoin) cannot have decimal values, these units must always be
+expressed as whole integer values based on the Bitcoin protocol. Satoshis are used in the calculations and converted to Bitcoin. For example you can have a Satoshi value of 1375000, but not 1375000.3289 
+(for example). Satoshis can only be whole numbers, so the decimal portion of any calculation result will be truncated.
+
+******************************************************
 
 Bitcoin's actual total supply is 20,999,999.9769 BTC, or 2,310,000 satoshis short of 21 million. 
 This can be an interesting topic to discuss in Bitcoin and crypto circles.
@@ -20,9 +34,15 @@ TotalRewardSize.py : This computes the total reward sizes only, not the total re
 each of the halving events, of which there are 32 significant halvings. Beyond that the protocol will continue the halving
 process, but rewards will be insignificant to miners because they are at 0. The sum of all reward sizes from each halving totals to 
 approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving blocks in each halving process. This is how you
-get the popular or more well known information that Bitcoin's total supply is 21,000,000 BTC.
+get the popular or more well known information that Bitcoin's total supply is 21,000,000 BTC (i.e. all the BTC mined).
 
-TotalBitcoinSupply.py: 
-  
+TotalBitcoinSupply.py: This presents the calculation of all the rewards of BTC issued, from the first block until the last significant 
+block that issues BTC. This is how we arrive at the value 20,999,999.9769 BTC. This program correctly calculates the total amount of Bitcoin that will be mined by summing the rewards distributed in each 
+halving era until the reward becomes zero. The result is very close to the theoretical limit of 21 million BTC.
+
+******************************************************
+
+The Bitcoin protocol defined using standard integer arithmetic to ensure clarity, reproducibility, and independence from specific hardware or low-level implementation details. This keeps the
+protocol implementation simple, and removes the complexity of having to make changes with regards to precision.
 
 
