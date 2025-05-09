@@ -45,8 +45,7 @@ add it up. For example cycle 1 or the first block reward size was 50 BTC. When t
 TotalBTCStandard.py This computes the total reward sizes only, not the total rewards issued (BTC created). This is taken from
 each of the halving events, of which there are 32 significant halvings. Beyond that the protocol will continue the halving
 process, but rewards will be insignificant to miners because they are at 0. The sum of all reward sizes from each halving totals to 
-approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving blocks in each halving process. This is how you
-get the popular or more well known information that Bitcoin's total supply is 21,000,000 BTC (i.e. all the BTC mined).
+approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving blocks in each halving process we get the popular or more well known value that Bitcoin's total supply is 21,000,000 BTC (i.e. all the BTC mined).
 
 TotalBitcoinSupply.py: This presents the calculation of all the rewards of BTC issued, from the first block until the last significant 
 block that issues BTC. This is how we arrive at the value 20,999,999.9769 BTC. This program correctly calculates the total amount of Bitcoin that will be mined by summing the rewards distributed in each 
