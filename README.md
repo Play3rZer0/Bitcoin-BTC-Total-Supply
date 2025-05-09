@@ -42,7 +42,7 @@ I present three programs in this project that are written in Python (version 3.6
 TotalRewardSize.py : This is the program that sums up all the Bitcoin reward sizes, not the total rewards given. It is a simple way to take each reward size value and
 add it up. For example cycle 1 or the first block reward size was 50 BTC. When the halving came it was then 25 BTC, then 12.5 BTC ... until we reach 0 BTC. Add them all up and we get 100 BTC/block halvings.
 
-TotalBTCStandard.py This computes the total reward sizes only, not the total rewards issued (BTC created). This is taken from
+TotalBTCStandard.py: This computes the total reward sizes only, not the total rewards issued (BTC created). This is taken from
 each of the halving events, of which there are 32 significant halvings. Beyond that the protocol will continue the halving
 process, but rewards will be insignificant to miners because they are at 0. The sum of all reward sizes from each halving totals to 
 approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving blocks in each halving process we get the popular or more well known value that Bitcoin's total supply is 21,000,000 BTC (i.e. all the BTC mined).
@@ -55,5 +55,7 @@ halving era until the reward becomes zero. The result is very close to the theor
 
 The Bitcoin protocol defined using standard integer arithmetic to ensure clarity, reproducibility, and independence from specific hardware or low-level implementation details. This keeps the
 protocol implementation simple, and removes the complexity of having to make changes with regards to precision.
+
+******************************************************
 
 
