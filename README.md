@@ -3,9 +3,7 @@ These programs compute the total Bitcoin reward sizes, and the actual total supp
 
 
 
-Introduction: These programs will show the two different ways to calculaete the total supply of Bitcoin. There is the traditional way which most
-people understand as the total supply of BTC, which is 21,000,000 BTC. I then present the actual way BTC is calculated, which is not exactly
-21,000,000 BTC.
+<b>Introduction</b>: These programs will show the two different ways to calculate the total supply of Bitcoin. There is the standard way which most people understand as the total supply of BTC, which is 21,000,000 BTC. I then present the actual way BTC is calculated, which is not exactly 21,000,000 BTC.
 
 
 
