@@ -13,7 +13,7 @@ people understand as the total supply of BTC, which is 21,000,000 BTC. I then pr
 The purpose of this project is to calculate the actual total supply of Bitcoin, which many assume is 21 million bitcoins.
 That is actually not the exact number, and that requires some explanation.
 
-1. Bitcoin does not use decimals in division, it uses integer math.
+<b>1. Bitcoin does not use decimals in division, it uses integer math.</b>
 
 Integer Division in the Protocol
 
@@ -21,7 +21,7 @@ The Bitcoin protocol specifies that the block reward starts at 50 BTC and is hal
 When a halving occurs, the new reward is essentially the previous reward divided by 2. If the previous reward was an odd number of Satoshis (the smallest unit), this division would result in a fraction.
 However, the protocol dictates that the block reward must be a whole number of Satoshis. Therefore, any fractional part resulting from the division is truncated (discarded).
 
-2. Bitcoin software protocol uses bit-shift operators.
+<b>2. Bitcoin software protocol uses bit-shift operators.</b>
 
 Bit-shift (Bitwise Shift) operators (<< for left shift and >> for right shift) are highly efficient ways to perform multiplication and division by powers of 2 at the binary level. They are crucial for 
 optimizing various low-level operations within the Bitcoin software, such as integer arithmetic. Since satoshi (the smallest unit of Bitcoin) cannot have decimal values, these units must always be
@@ -37,7 +37,7 @@ Bitcoin truncates decimals when halving block rewards due to the way the reward 
 is why in explanation #1 decimals in division are discarded or truncated. The protocol will round the number to the nearest
 whole integer value.
 
-I present two programs in this project that are written in Python (version 3.6.5 and higher).
+I present three programs in this project that are written in Python (version 3.6.5 and higher).
 
 TotalRewardSize.py : This is the program that sums up all the Bitcoin reward sizes, not the total rewards given. It is a simple way to take each reward size value and
 add it up. For example cycle 1 or the first block reward size was 50 BTC. When the halving came it was then 25 BTC, then 12.5 BTC ... until we reach 0 BTC. Add them all up and we get 100 BTC/block halvings.
