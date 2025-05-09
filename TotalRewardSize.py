@@ -8,7 +8,6 @@ def calculate_sum_of_rewards():
         sum_of_rewards += reward
         reward /= 2
 
-    print(f"The sum of all future Bitcoin block reward sizes is: {sum_of_rewards} BTC")
     return sum_of_rewards
 
 if __name__ == "__main__":
