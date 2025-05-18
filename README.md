@@ -37,15 +37,17 @@ whole integer value.
 
 I present three programs in this project that are written in Python (version 3.6.5 and higher).
 
-TotalRewardSize.py : This is the program that sums up all the Bitcoin reward sizes, not the total rewards given. It is a simple way to take each reward size value and
+<b>TotalRewardSize.py :</b> This is the program that sums up all the Bitcoin reward sizes, not the total rewards given. It is a simple way to take each reward size value and
 add it up. For example cycle 1 or the first block reward size was 50 BTC. When the halving came it was then 25 BTC, then 12.5 BTC ... until we reach 0 BTC. Add them all up and we get 100 BTC/block halvings.
 
-TotalBTCStandard.py: This computes the total reward sizes only, not the total rewards issued (BTC created). This is taken from
+<b>TotalBTCStandard.py:</b> This computes the total reward sizes only, not the total rewards issued (BTC created). This is taken from
 each of the halving events, of which there are 33 significant halvings. Beyond that the protocol will continue the halving
-process, but rewards will be insignificant to miners because they are at 0. The sum of all reward sizes from each halving totals to 
-approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving blocks in each halving process we get the popular or more well known value that Bitcoin's total supply is 21,000,000 BTC (i.e. all the BTC mined).
+process, but rewards will be insignificant to miners because they are at 0. 
 
-TotalBitcoinSupply.py: This presents the calculation of all the rewards of BTC issued, from the first block until the last significant 
+The sum of all reward sizes from each halving totals to 
+approximately 100 BTC/total blocks. When multiplied with the 210,000 halving blocks in each halving process we get the popular or more well known value of Bitcoin's approximate total supply of 21,000,000 BTC (i.e. all the BTC mined).
+
+<b>TotalBitcoinSupply.py:</b> This presents the calculation of all the rewards of BTC issued, from the first block until the last significant 
 block that issues BTC. This is how we arrive at the value 20,999,999.9769 BTC. This program correctly calculates the total amount of Bitcoin that will be mined by summing the rewards distributed in each halving era until the reward becomes zero. The result is very close to the theoretical limit of 21 million BTC.
 
 The final amount of BTC that will be in circulation is 20,996,802.3669 BTC after removing 3,197.61 BTC from "burn addresses". These are permanently lost BTC that will never be put back into circulation. There are other reports that there can be as many as 3.7 million lost BTC (from a Chainalysis report), so that would make the supply in circulation even smaller.
