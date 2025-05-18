@@ -1,5 +1,5 @@
 def calculate_sum_of_rewards():
-    """Calculates the sum of all future Bitcoin block reward sizes."""
+    #Calculates the sum of all future Bitcoin block reward sizes.
     initial_reward = 50.0
     reward = initial_reward
     sum_of_rewards = 0.0
