@@ -1,4 +1,4 @@
-## Bitcoin-BTC-Total-Supply
+## Bitcoin-BTC-Total-Supply-Simulator
 These programs compute the total Bitcoin reward sizes, and the actual total supply of bitcoins.
 
 
