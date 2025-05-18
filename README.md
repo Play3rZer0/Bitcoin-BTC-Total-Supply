@@ -48,7 +48,7 @@ approximately 100 BTC/halving blocks. When multiplied with the 210,000 halving b
 TotalBitcoinSupply.py: This presents the calculation of all the rewards of BTC issued, from the first block until the last significant 
 block that issues BTC. This is how we arrive at the value 20,999,999.9769 BTC. This program correctly calculates the total amount of Bitcoin that will be mined by summing the rewards distributed in each halving era until the reward becomes zero. The result is very close to the theoretical limit of 21 million BTC.
 
-The final amount of BTC that will be in circulation is 20,997,107.88801356 BTC after removing 2,709.42507135 BTC "burn addresses". These are permanently lost BTC that will never be put back into circulation. There are other reports that there can be as many as 3.7 million lost BTC (from a Chainalysis report), so that would make the supply in circulation even smaller.
+The final amount of BTC that will be in circulation is 20,996,802.3669 BTC after removing 3,197.61 BTC from "burn addresses". These are permanently lost BTC that will never be put back into circulation. There are other reports that there can be as many as 3.7 million lost BTC (from a Chainalysis report), so that would make the supply in circulation even smaller.
 
 ******************************************************
 
