@@ -59,4 +59,8 @@ protocol implementation simple, and removes the complexity of having to make cha
 
 ******************************************************
 
+For more details, read my article from the link below:
 
+https://medium.com/datadriveninvestor/bitcoins-total-supply-is-not-exactly-21-million-coins-3f1eb18ba1f7
+
+![Alt text](https://miro.medium.com/v2/resize:fit:828/format:webp/1*Ds6IhcQhpOBM-IzDUVg3tQ.png "a title")
